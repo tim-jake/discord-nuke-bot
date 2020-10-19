@@ -94,7 +94,7 @@ async def ban(ctx, user: discord.Member=None):
             await client.say('Please input a user.')
         else:
             await client.say("Get banned **{}**, Damn kid".format(user.name))
-            await client.ban(user)
+            await client.ban()
     else:
         await client.say('You lack permission to preform this action')
 
